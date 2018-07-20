@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>{%block ftitle %}{% endblock %}</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+
+
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+        <ul class="navbar-nav mr-auto" id="top-nav">
+          {% for item in nav.top %}
+          <li class="{{ 'nav-item active' if item.is_active else '' }}"-->
+            <a class="nav-link text-black-50" href="{{ item.url }}">{{ item.label }}</a>
+          </li>
+          {% endfor %}
+          <!--li>
+            <form class="form-inline" action='/login' method='POST'>
+              <input class="form-control input-sm mb-0" type='text' name='user_id' id='user_id' placeholder='username' />
+              <input class="form-control input-sm mb-0" type='password' name='password' id='password' placeholder='password'/>
+              <input class="btn mb-0" type='submit' name='submit' />
+            </form>
+          </li-->
+        </ul>
+      </div>
+    </div>
+
+    {% block fbody %}
+    {% endblock %}
+
+  </body>
+</html>

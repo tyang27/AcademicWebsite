@@ -1,0 +1,20 @@
+{% extends layoutfp %}
+
+{% block ftitle %}
+Projects
+{% endblock %}
+
+
+{% block fbody %}
+<div class="container">
+  <h1>Projects</h1>
+  <p class="lead">As a computer science student, I have worked on a few projects.</p>
+  <dl>
+    {% for proj in projects %}
+    <dt>{{proj.name}}</dt>
+    <dd>{{proj.desc}}</dd>
+    </ul>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}
