@@ -1,6 +1,6 @@
+#!/usr/bin/env python3
 from flask import Flask, render_template, request, redirect, url_for
 from flask.ext.navigation import Navigation
-import flask_login
 import sys
 
 application = Flask(__name__)
