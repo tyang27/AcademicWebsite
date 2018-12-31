@@ -7,6 +7,8 @@ application = Flask(__name__, static_url_path='/static')
 templateLayout = 'layout.html'
 templateIndex = 'index.html'
 templateTech = 'tech.html'
+templateClubs = 'clubs.html'
+templateMedia = 'media.html'
 
 #=============================================================================#
 # Handles Route /
@@ -18,6 +20,13 @@ def index():
 def tech():
     return render_template(templateTech, layoutfp=templateLayout)
 
+@application.route('/clubs', methods=['GET', 'POST'])
+def clubs():
+    return render_template(templateClubs, layoutfp=templateLayout)
+
+@application.route('/media', methods=['GET', 'POST'])
+def media():
+    return render_template(templateMedia, layoutfp=templateLayout)
 #=============================================================================#
 # https://stackoverflow.com/questions/21714653/flask-css-not-updating
 @application.context_processor
