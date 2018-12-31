@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>{%block ftitle %}{% endblock %}</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+<div class="navbar-container">
+    <ul class="navbar-list" role="navigation">
+        <li class="navbar-title">Tony Yang</li>
+        <li class="navbar-item"><a href="/">Home</a></li>
+        <li class="navbar-item"><a href="/tech">Technology</a></li>
+        <li class="navbar-item">Clubs</li>
+        <li class="navbar-item">Media</li>
+        <li class="navbar-item">Contact</li>
+    </ul>
+</div>
+
+{% block fbody %}
+{% endblock %}
+
+<footer>
+    Tony Yang | tyang27@jhu.edu | 2018.
+</footer>
+</body>
+</html>

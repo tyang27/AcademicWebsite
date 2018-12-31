@@ -1,0 +1,107 @@
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  text-align: center;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+/* Navigation bar : layout.html. */
+.navbar-container {
+}
+.navbar-title {
+  margin-right: auto;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.navbar-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: baseline;
+  padding: 0;
+}
+.navbar-item {
+  padding: 10px;
+}
+
+.content {
+  display: block;
+  text-align: center;
+}
+
+/* Statement : index.html. */
+.statement-container {
+}
+.statement {
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px maroon;
+
+  padding: 10px;
+
+  text-align: center;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.statement:hover {
+  background-color: maroon;
+  color: white;
+}
+.statement-subtitle {
+  color: white;
+}
+
+/* Socials : index.html. */
+.socials-container {
+  display: block;
+}
+#socials-title {
+  margin-bottom: 0;
+}
+.socials {
+  display: inline;
+}
+.socials-list {
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.socials-item {
+  margin-left: 0;
+  padding: 10px;
+}
+
+/* Research : tech.html */
+.research {
+}
+
+/* Project : tech.html */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.project {
+  border: 1px black solid;
+  border-radius: 5px;
+  box-shadow: 3px 3px darkorange;
+  margin: 5px;
+  padding: 10px;
+}
+.project-divider {
+  width: 80%;
+}
+
+.tech-section {
+  width: 80%;
+  display: inline-block;
+}
