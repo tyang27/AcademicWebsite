@@ -10,6 +10,15 @@ footer {
   margin: 0;
 }
 
+/* Fonts. */
+.sanserif {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.03em;
+}
+.serif {
+  font-family: 'Source Serif Pro', serif;
+}
+
 /* Navigation bar : layout.html. */
 .navbar-container {
 }
@@ -17,6 +26,7 @@ footer {
   margin-right: auto;
   margin-left: 10px;
   font-weight: bold;
+  font-size: 30px;
 }
 .navbar-list {
   list-style: none;
@@ -28,6 +38,7 @@ footer {
 }
 .navbar-item {
   padding: 10px;
+  font-size: 20px;
 }
 
 .content {
@@ -36,17 +47,23 @@ footer {
 }
 
 /* Statement : index.html. */
+.statements-container {
+  display: block;
+}
 .statement-container {
+  margin: 10px;
+  display: inline-block;
 }
 .statement {
   border: 1px solid black;
   border-radius: 5px;
   box-shadow: 5px 5px maroon;
 
-  padding: 10px;
+  padding: 15px;
 
   text-align: center;
-  display: inline-block;
+  /*display: inline-block;*/
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -93,7 +110,7 @@ footer {
 .project {
   border: 1px black solid;
   border-radius: 5px;
-  box-shadow: 3px 3px darkorange;
+  box-shadow: 3px 3px gray;
   margin: 5px;
   padding: 10px;
 }
