@@ -1,67 +1,32 @@
 {% extends layoutfp %}
 {% block ftitle %}
-Home
+Tony Yang
 {% endblock %}
 
 {% block fbody %}
-<div class="container">
-  <div class="row mb-2" id="about-me">
-    <div class="col-sm-4">
-      <img class="img-thumbnail" src="https://lh3.googleusercontent.com/dvOCglC2aKTCGVBQWVq461Fh85HvU-gHtC_b2AcNzIYQ2RU1JPOy8R2bS_a1R-5gXPEVELzawMeFTHk-bNz3reNZLRAA9QJCtDzeMCz2KtL0TRsh-XjAu25sO0-5QWnflPzZUr8IYJE=w2400" style="width=100%;" class="img-rounded">
-    </div>
-    <div class="col-sm-6">
-      <div class="col-sm-12">
-        <h1 id="name">Tony Yang</h1>
-      </div>
-      <dl>
-        <dt class="col-sm-2">Education</dt>
-        <dd class="col-sm-10" id="school">Johns Hopkins University</dd>
-        <dt class="col-sm-2">Majors</dt>
-        <dd class="col-sm-10" id="course-of-study">Computer Science, Public Health Studies</dd>
-        <dt class="col-sm-2">Email</dt>
-        <dd class="col-sm-10" id="email"><a href="mailto:tyang27@jhu.edu">tyang27@jhu.edu</a></dd>
-      </dl>
-    </div>
-  </div>
-  <div class="row" id="about-me-desc">
-    <div class="col-sm-8">
-      <p class="lead font-weight-bold mb-0">About me</p>
-      <p> I am an undergraduate student at Johns Hopkins University graduating in
-      2020 studying Computer Science and Public Health Studies. I am currently
-      doing networking research at Temple University under the REU program. My
-      work revolves around data representation, so I am interested in databases
-      as well.  </p> </div> </div>
-  <div class="row" id="teaching">
-    <div class="col-sm-8">
-      <p class="lead font-weight-bold mb-0">Teaching</p>
-      <ul class="list-unstyled">
-        <li>601.229 - Computer Systems Fundamentals - Fall 2018 - Course Assistant</li>
-        <li>601.220 - Intermediate Programming - Spring 2018 - Course Assistant</li>
-      </ul>
-    </div>
-  </div>
 
-  <p class="lead font-weight-bold mb-0">Social Media</p>
-  <div class="row" id="social media">
-    <div class="col-sm-8">
-      <a href="https://www.linkedin.com/in/tony-yang-a6198511a/">
-        <button type="button" class="btn btn-li">
-          <i class="fab fa-linkedin pr-2"></i>Linkedin</a>
-        </button>
-        <a href="https://github.com/tyang27">
-          <button type="button" class="btn btn-li">
-            <i class="fab fa-github pr-2"></i>Github</a>
-          </button>
-          <a href="https://www.instagram.com/tonyyangsterbw/">
-            <button type="button" class="btn btn-li">
-              <i class="fab fa-instagram pr-2"></i>Instagram</a>
-            </button>
-            <a href="https://www.goodreads.com/user/show/79956266-tony-y">
-              <button type="button" class="btn btn-li">
-                <i class="fab fa-goodreads pr-2"></i>Goodreads</a>
-              </button>
+<div class="content">
+    <h1 class="sanserif">Tony Yang</h1>
+    <h2 class="serif">He/Him/His</h2>
+    <h3 class="serif">Undergraduate at Johns Hopkins University | Department of Computer Science</h3>
+    <h3 class="serif">Tech intern at Cisco Systems | Operations</h3>
+
+    <div>
+        <h2 class="serif">How I spend my time</h2>
+        <img src="static/hierarchy.svg" width="50%" alt=""> 
     </div>
-  </div>
+
+    <div class="socials-container">
+        <div class="socials">
+            <h2 id="socials-title" class="no-margin serif">Connect with me.</h2>
+            <ul class="socials-list">
+                <li class="socials-item serif"><a href="https://github.com/tyang27" target="_blank">Github</a></li>
+                <li class="socials-item serif"><a href="https://tonysbitsandbytes.wordpress.com" target="_blank">Blog</a></li>
+                <li class="socials-item serif"><a href="https://www.linkedin.com/in/tony-yang-a6198511a/" target="_blank">Linkedin</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 
-</div> {% endblock %}
+{% endblock %}

@@ -1,0 +1,27 @@
+strict digraph {
+	" " [color=gray80]
+	Service [color=gray60]
+	Research [color=gray60]
+	Classes [color=gray60]
+	Fun [color=gray60]
+	" " -> Service
+	" " -> Research
+	" " -> Classes
+	" " -> Fun
+	"B'more First" [color=gray40]
+	Politics [color=gray40]
+	Health [color=gray40]
+	Wellness [color=gray40]
+	Animation [color=gray40]
+	Service -> "B'more First"
+	Service -> Politics
+	Research -> Health
+	Fun -> Wellness
+	Fun -> Animation
+	Politics -> NYT
+	Politics -> Letters
+	Cooking
+	Exercise
+	Wellness -> Cooking
+	Wellness -> Exercise
+}

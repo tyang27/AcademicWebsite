@@ -1,3 +1,121 @@
-.card {
-  width: 40rem;
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  text-align: center;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+/* Fonts. */
+.sanserif {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.03em;
+}
+.serif {
+  font-family: 'Source Serif Pro', serif;
+}
+
+/* Navigation bar : layout.html. */
+.navbar-container {
+}
+.navbar-title {
+  margin-right: auto;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 30px;
+}
+.navbar-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: baseline;
+  padding: 0;
+}
+.navbar-item {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.content {
+  display: block;
+  text-align: center;
+}
+
+/* Statement : index.html. */
+.statements-container {
+  display: block;
+}
+.statement-container {
+  margin: 10px;
+  display: inline-block;
+}
+.statement {
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px maroon;
+
+  padding: 15px;
+
+  text-align: center;
+  /*display: inline-block;*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.statement:hover {
+  background-color: maroon;
+  color: white;
+}
+.statement-subtitle {
+  color: white;
+}
+
+/* Socials : index.html. */
+.socials-container {
+  display: block;
+}
+#socials-title {
+  margin-bottom: 0;
+}
+.socials {
+  display: inline;
+}
+.socials-list {
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.socials-item {
+  margin-left: 0;
+  padding: 10px;
+}
+
+/* Research : tech.html */
+.research {
+}
+
+/* Project : tech.html */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.project {
+  margin: 5px;
+  padding: 10px;
+}
+.project-divider {
+  width: 80%;
+}
+
+.tech-section {
+  width: 80%;
+  display: inline-block;
 }
